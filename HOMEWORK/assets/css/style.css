@@ -1,0 +1,106 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.navbar{
+    width:800px;
+    padding:20px 10px;
+    margin: 100px auto;
+}
+.navbar>ul{
+    display:flex;
+    justify-content: space-around;
+}
+.navbar>ul>li{
+    list-style-type: none;
+    padding: 4px 8px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    width: 22%;
+    text-align: center;
+    transition: ease-in 0.3s;
+    position: relative;
+}
+.navbar>ul>li:hover{
+    background-color: blue;
+    transition: ease-in 0.3s;
+}
+.navbar>ul>li:hover a{
+    color:white;
+    transition: ease-in 0.3s;
+}
+.navbar>ul>li>a{
+    text-decoration: none;
+    font-size: 18px;
+    transition: ease-in 0.3s;    
+}
+
+.dropMenu{
+    position: absolute;
+    width: 100%;    
+    left: 0;    
+    top: 35px;
+    border-radius: 5px;
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0.5s linear,opacity 0.5s linear;
+    
+}
+.dropMenu>ul{
+    padding:0;
+    position: relative;
+   
+}
+
+.dropMenu>ul>li{
+    list-style-type: none;
+    padding:10px 0px;
+    background: blue; 
+    -webkit-box-shadow: 6px 10px 22px -8px rgba(209,71,71,1);
+    -moz-box-shadow: 6px 10px 22px -8px rgba(209,71,71,1);
+    box-shadow: 6px 10px 22px -8px rgba(209,71,71,1);
+    
+}
+
+.dropMenu>ul>li:first-child{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.dropMenu>ul>li:last-child{
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.dropMenu>ul>li:nth-child(even){
+    transform: translateX(100px);
+    transition: ease-in 0.5s;
+    
+}
+.dropMenu>ul>li:nth-child(odd){
+    transform: translateX(-100px);
+    transition: ease-in 0.5s;
+}
+
+.dropMenu>ul>li:hover{
+    background-color: white;
+}
+.dropMenu>ul>li>a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.dropMenu>ul>li:hover a{
+    color:blue;
+}
+
+.active{
+    visibility:visible;
+    opacity:1;
+}
+.active>ul>li:nth-child(even){
+    transform: translateX(0);
+    transition: ease-in 0.5s;
+}
+.active>ul>li:nth-child(odd){
+    transform: translateX(0);
+    transition: ease-in 0.5s;
+}
