@@ -8,28 +8,34 @@
     <title>DROPDOWN-MENU</title>
 </head>
 <body>
+    
     <div class="navbar">
-        <ul class="navbar_list">
-            <li class="navbar_list_item"><a href="#">Home</a></li>
-            <li class="navbar_list_item toggleMenu"><a href="#">Products</a>
-                <ul class="dropdown_list">
-                    <li class="dropdown_list_item"><a href="#">Memory</a></li>
-                    <li class="dropdown_list_item"><a href="#">Chipset</a></li>
-                    <li class="dropdown_list_item"><a href="#">Resistors</a></li>
-                    <li class="dropdown_list_item"><a href="#">BIOS</a></li>
-                </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" data-dropmenu="1">Products</a>
+                <div class="dropMenu">
+                    <ul>
+                        <li><a href="#">Chipset</a></li>
+                        <li><a href="#">Flash</a></li>
+                        <li><a href="#">RAM</a></li>
+                        <li><a href="#">HDD</a></li>
+                    </ul>
+                </div>                
             </li>
-            <li class="navbar_list_item"><a href="#">About</a></li>
-            <li class="navbar_list_item toggleMenu"><a href="#">Privacy Settings</a>
-                <ul class="dropdown_list">
-                        <li class="dropdown_list_item"><a href="#">Account</a></li>
-                        <li class="dropdown_list_item"><a href="#">Privacy Settings</a></li>
-                        <li class="dropdown_list_item"><a href="#">Passwords</a></li>
-                        <li class="dropdown_list_item"><a href="#">Email Notifications</a></li>
-                        <li class="dropdown_list_item"><a href="#">Blocked Accounts</a></li>
-                    </ul></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#" data-dropmenu="1">Privacy Settings</a>
+                <div class="dropMenu">
+                    <ul>
+                        <li><a href="#">Chipset</a></li>
+                        <li><a href="#">Flash</a></li>
+                        <li><a href="#">RAM</a></li>
+                        <li><a href="#">HDD</a></li>
+                    </ul>
+                </div>
+            </li>
         </ul>
     </div>
+
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
